@@ -1,6 +1,6 @@
 package com.longhua.lily;
 
-import com.navdrawer.SimpleSideDrawer;
+import com.longhua.common.SimpleSideDrawer;
 
 import android.app.Activity;
 import android.os.Bundle;
