@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
         
         mNav = new SimpleSideDrawer(this);
         mNav.setLeftBehindContentView(R.layout.left);
-        findViewById(R.id.leftBtn).setOnClickListener(new OnClickListener() {
+        findViewById(R.id.mainLeftBtn).setOnClickListener(new OnClickListener() {
             @Override 
             public void onClick(View v) {
                 mNav.toggleLeftDrawer();

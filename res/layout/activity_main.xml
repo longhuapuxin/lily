@@ -2,15 +2,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/blue" >
+    android:background="@drawable/image_bg_new" >
 
-    <Button
-        android:id="@+id/leftBtn"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Left Menu" />
+
     
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation_bar"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/push_button_03" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+        
+        
+    <!-- header -->
+        
+	    <RelativeLayout
+	        android:id="@+id/header"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentTop="true"
+	        android:background="#30FFFFFF" >
+	
+	        <ImageView
+	            android:id="@+id/mainLeftBtn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="5dp"
+	            android:src="@drawable/option_menu" />
+	
+	    </RelativeLayout>
+
+	<!-- body layout -->
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/header" >
+
+	    </RelativeLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
