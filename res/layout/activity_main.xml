@@ -38,7 +38,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:src="@drawable/ic_launcher" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_main_message" />
 
             <ImageButton
                 android:id="@+id/imgLabelBtn"
@@ -47,7 +48,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:src="@drawable/ic_launcher" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_main_label" />
 
         </LinearLayout>
         
@@ -66,7 +68,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:src="@drawable/ic_launcher" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_main_contacts" />
 
             <ImageButton
                 android:id="@+id/imgShopBtn"
@@ -75,7 +78,8 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:background="@color/transparent"
-                android:src="@drawable/ic_launcher" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_main_shop" />
 
         </LinearLayout>
         
