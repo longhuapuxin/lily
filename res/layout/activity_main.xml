@@ -3,8 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/image_bg_new" >
-
-
     
     <!-- Footer aligned to bottom -->
 
@@ -13,22 +11,24 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/footer_height"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/navigation_bar"
-         >
+        android:background="@drawable/menu_bottom" >
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imgPlusBtn"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/push_button_03" />
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu_bluenews" />
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="14dp"
             android:layout_toLeftOf="@id/imgPlusBtn" >
 
             <ImageButton
@@ -53,12 +53,12 @@
 
         </LinearLayout>
         
-        
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="14dp"
             android:layout_toRightOf="@id/imgPlusBtn" >
 
             <ImageButton
@@ -105,14 +105,15 @@
 	        android:layout_alignParentTop="true"
 	        android:background="#30FFFFFF" >
 	
-	        <ImageView
+	        <ImageButton
 	            android:id="@+id/mainLeftBtn"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
+	            android:layout_width="60dp"
+	            android:layout_height="fill_parent"
 	            android:layout_alignParentLeft="true"
 	            android:layout_centerVertical="true"
-	            android:layout_marginLeft="5dp"
-	            android:src="@drawable/option_menu" />
+	            android:background="@color/transparent"
+	            android:scaleType="fitCenter"
+	            android:src="@drawable/nav_menu" />
 	
 	    </RelativeLayout>
 
