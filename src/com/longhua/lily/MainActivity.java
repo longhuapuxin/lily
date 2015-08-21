@@ -10,7 +10,6 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageView;
 
 public class MainActivity extends Activity implements OnClickListener {
 	
@@ -41,7 +40,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		FragmentManager fragmentManager = getFragmentManager();
 		FragmentTransaction fragmentTransaction = fragmentManager
 				.beginTransaction();
-		MainEgMessage fragment = new MainEgMessage();
+		MainMessageFragment fragment = new MainMessageFragment();
 		fragmentTransaction.replace(R.id.fragmentContainer, fragment);
 //		fragmentTransaction.addToBackStack(null);
 		fragmentTransaction.commit();
@@ -63,19 +62,19 @@ public class MainActivity extends Activity implements OnClickListener {
 			
 			switch(id) {
 			case R.id.imgMessageBtn:
-				nextFragment = new MainEgMessage();
+				nextFragment = new MainMessageFragment();
 				break;
 			case R.id.imgLabelBtn:
-				nextFragment = new MainEgLabel();
+				nextFragment = new MainLabelFragment();
 				break;
 			case R.id.imgContactBtn:
-				nextFragment = new MainEgMessage();
+				nextFragment = new MainMessageFragment();
 				break;
 			case R.id.imgShopBtn:
-				nextFragment = new MainEgMessage();
+				nextFragment = new MainMessageFragment();
 				break;
 			default:
-				nextFragment = new MainEgMessage();
+				nextFragment = new MainMessageFragment();
 				break;
 			}
 			
@@ -94,9 +93,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 	}
 	
-	private void switchToSegment() {
-		
-	}
+//	private void switchToSegment() {
+//		
+//	}
 
 
 }
