@@ -2,7 +2,7 @@ package com.longhua.lily;
 
 
 import com.longhua.common.SimpleSideDrawer;
-
+import com.longhua.update.UpdateManager;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -19,6 +19,13 @@ public class MainActivity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        
+        //Check app update.
+		UpdateManager manager = new UpdateManager(MainActivity.this);
+		manager.checkUpdate();
+        
+        
         
         //Set side drawer.
         mNav = new SimpleSideDrawer(this);
