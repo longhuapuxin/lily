@@ -19,15 +19,12 @@ public class MainActivity extends Activity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        
+
         //Check app update.
 		UpdateManager manager = new UpdateManager(MainActivity.this);
 		manager.checkUpdate();
-        
-        
-        
-        //Set side drawer.
+
+		//Set side drawer.
         mNav = new SimpleSideDrawer(this);
         mNav.setLeftBehindContentView(R.layout.left);
         findViewById(R.id.mainLeftBtn).setOnClickListener(new OnClickListener() {
